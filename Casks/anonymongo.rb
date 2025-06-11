@@ -2,7 +2,7 @@
 cask "anonymongo" do
   desc "A CLI tool to redact sensitive values from MongoDB log files"
   homepage "https://github.com/yuvalherziger/homebrew"
-  version "0.1.0-rc.1"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,28 +12,28 @@ cask "anonymongo" do
 
   on_macos do
     on_intel do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0-rc.1/anonymongo_Darwin_x86_64.tar.gz"
-      sha256 "43bc31616b6c32d1d0d446401853cd53befbbdcc81c12a2af8e3eaa17613a98d"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0/anonymongo_Darwin_x86_64.tar.gz"
+      sha256 "55a884bc66332337ffd87611071ecd84242da24a210bddacfbe3643aabe1681c"
     end
     on_arm do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0-rc.1/anonymongo_Darwin_arm64.tar.gz"
-      sha256 "694668183dc4a4056a71ec899d9786aa6a0194434370a4e4fc90130a44775652"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0/anonymongo_Darwin_arm64.tar.gz"
+      sha256 "ad92739543b4d0adae832b87148bbd221e02bd1e1553ff6d432b33bd56891f8b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0-rc.1/anonymongo_Linux_x86_64.tar.gz"
-      sha256 "d26dfac7df5997d0d7bebc1b6ed525cd01000eb1c3081d9b51ec92d2074494eb"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0/anonymongo_Linux_x86_64.tar.gz"
+      sha256 "57ef0b7be02ad443d945ddacaeac52a0afc05b2fe22c6eb5f5d7aa53943a38a6"
     end
     on_arm do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0-rc.1/anonymongo_Linux_arm64.tar.gz"
-      sha256 "9765aca16a372d39cfd1ca6ad124f266adefb8d5260ebab6700733a083656ba1"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.1.0/anonymongo_Linux_arm64.tar.gz"
+      sha256 "5dab8a211ba3c47fa3bae00bd0a4761c261aff7921e19f2f2ba9975f1bb548a4"
     end
   end
 
   caveats do
-    "To test the installation, run: anonymongo --version"
+    "To test the installation, run: anonymongo version"
   end
 
   # No zap stanza required
