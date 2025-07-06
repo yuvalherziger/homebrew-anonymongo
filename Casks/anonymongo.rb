@@ -2,7 +2,7 @@
 cask "anonymongo" do
   desc "A CLI tool to redact sensitive values from MongoDB log files"
   homepage "https://github.com/yuvalherziger/homebrew"
-  version "0.5.1"
+  version "1.0.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "anonymongo" do
 
   on_macos do
     on_intel do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.5.1/anonymongo_Darwin_x86_64.tar.gz"
-      sha256 "cf894bb1f52e88cbc94c409639404c702a9d4728036283f210ebc298b762a8de"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.0/anonymongo_Darwin_x86_64.tar.gz"
+      sha256 "a0c1c7cf8dad00eee49f1c2281a6a743c7a218eded4ff931436e06b20ec1244d"
     end
     on_arm do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.5.1/anonymongo_Darwin_arm64.tar.gz"
-      sha256 "22f773ccf3de59af0ee7b13db9bc758e7af07191eb0bec629fa9a4362225bffe"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.0/anonymongo_Darwin_arm64.tar.gz"
+      sha256 "64e6b4e8a0b54d427309e70c0354a21e5e0787c48d345728cd5d7e5ceaa31b9c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.5.1/anonymongo_Linux_x86_64.tar.gz"
-      sha256 "25e08b1316aec13e876e633fa52be8bbe30cd95b446963208ce6c3076f281be0"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.0/anonymongo_Linux_x86_64.tar.gz"
+      sha256 "c2b32a35e58f18492a7937f3d27b8422935f1c5b10e0e6a8eea43cab7dd8f9d5"
     end
     on_arm do
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/0.5.1/anonymongo_Linux_arm64.tar.gz"
-      sha256 "84f3d8106397371c66bb1c24441af36727ba27a1c0c1b41b9781fce2ad226005"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.0/anonymongo_Linux_arm64.tar.gz"
+      sha256 "c385722f21031bdf5deffd209635eff6ff033f794d8ba27221f8bf9ae5dc0fe0"
     end
   end
 
