@@ -5,21 +5,21 @@
 class Anonymongo < Formula
   desc "A CLI tool to redact sensitive values from MongoDB log files"
   homepage "https://github.com/yuvalherziger/anonymongo"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.3/anonymongo_Darwin_x86_64.tar.gz"
-      sha256 "7667adc2bcda1fb07e5949fb82d67b6ceeb1507f2b2aae14d0476a4ef3bdd951"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.4/anonymongo_Darwin_x86_64.tar.gz"
+      sha256 "db5902b5428f55de578882a19a1b03a0fcd5b09166ae6feed3a48a36871fbc2e"
 
       def install
         bin.install "anonymongo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.3/anonymongo_Darwin_arm64.tar.gz"
-      sha256 "6ec5f80f022739721009e2547c91f14c97a2b5d73a5f2cb41985a20d3d458f5c"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.4/anonymongo_Darwin_arm64.tar.gz"
+      sha256 "d368ef996d0d6356a961edcb22b0eb3e39e07e945fae001084ac800ba259d723"
 
       def install
         bin.install "anonymongo"
@@ -29,15 +29,15 @@ class Anonymongo < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.3/anonymongo_Linux_x86_64.tar.gz"
-      sha256 "21e34498436df733896bf86698748fbde02b20f5d41ac6939c73a3b6fdf46a99"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.4/anonymongo_Linux_x86_64.tar.gz"
+      sha256 "a5ba7db76663412e3fc8fcce728a43f0a4ac87de8d8a65268958e5edf9bea08e"
       def install
         bin.install "anonymongo"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.3/anonymongo_Linux_arm64.tar.gz"
-      sha256 "32126b6ef59d950ee2ba0bcfbd7b26c8202c872d6ab329fb2ad2a8038f19113c"
+      url "https://github.com/yuvalherziger/anonymongo/releases/download/1.0.4/anonymongo_Linux_arm64.tar.gz"
+      sha256 "6a8e8ebc961850c96dfb2d6366d3d9033989da3513d78b8c2426b442adf8dc44"
       def install
         bin.install "anonymongo"
       end
